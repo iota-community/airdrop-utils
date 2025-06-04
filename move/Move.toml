@@ -1,0 +1,11 @@
+[package]
+name = "airdrop"
+edition = "2024.beta"
+
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "mainnet" }
+
+[addresses]
+airdrop = "0x0"
+
+

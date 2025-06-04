@@ -1,0 +1,20 @@
+{
+  "name": "airdrop-utils",
+  "version": "1.0.0",
+  "description": "Utils to airdrop IOTA types to addresses",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node runAirdrop.js"
+  },
+  "dependencies": {
+    "@iota/bcs": "^0.2.1",
+    "@iota/iota-sdk": "^0.6.0",
+    "bignumber.js": "^9.3.0",
+    "csv": "^6.3.11",
+    "dotenv": "^16.5.0",
+    "fs": "^0.0.1-security"
+  }
+}

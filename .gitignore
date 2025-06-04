@@ -1,0 +1,3 @@
+.env.airdrop
+node_modules
+*.csv
