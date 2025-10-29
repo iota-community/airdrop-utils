@@ -16,8 +16,19 @@ Run this cmd: `npm i`
 
 Copy the sample `.env.airdrop.example` to `.env.airdrop` and edit the following params:
 
- - `CURRENT_OWNER_ACCOUNT_MNEMONIC`
- - `AIRDROP_INDIVIDUAL_AMOUNT`
+**Notice**
+
+If the param `MULTISIG_ACCOUNT_ADDRESS` is set, then the script will only build the tx.
+
+If the param `AIRDROP_INDIVIDUAL_AMOUNT` is set, then all recipient addresses will receive the same amount.
+
+### Same amount for all recipient addresses
+
+Data is specified in the file `airdropDataOneCol.csv` which is one column CSV with one address per line. Delimiter is newline `\n`.
+
+### Different amounts for different recipient addresses
+
+Data is specified in the file `airdropDataTwoCols.csv` which is two-column CSV with the first column is for address while the second column is for amount. Delimiter is `comma`.
 
 Create the CSV file `airdropData.csv` which holds the addresses to receive airdrop. Each address is per line.
 
