@@ -43,7 +43,7 @@ const extractDataFromCSVTwoColumns = async (filePath, delimiter, from_line = 1) 
                     return;
                 }
 
-                resolve([columnAddress, columnAmount, totalAmount]);
+                resolve([columnAddress, columnAmount, Math.ceil(totalAmount)]);
             });
         });
     } catch (error) {
