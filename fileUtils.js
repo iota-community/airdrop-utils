@@ -35,6 +35,8 @@ const extractDataFromCSVTwoColumns = async (filePath, delimiter, from_line = 1) 
                             .toString();
                         columnAmount.push(amount);
                         totalAmount += Number(row[1].trim());
+                    } else {
+                        console.log(`Invalid row skipped: ${row}`);
                     }
                 }
 

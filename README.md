@@ -26,12 +26,30 @@ If the param `AIRDROP_INDIVIDUAL_AMOUNT` is set, then all recipient addresses wi
 
 Data is specified in the file `airdropDataOneCol.csv` which is one column CSV with one address per line. Delimiter is newline `\n`.
 
+Example:
+
+```
+0x1b161bf35ad91f323b5e05bd2f871635f3f6094d95aa7693ec033411bb7ce937
+0xe487a2538dc5ff473f948e455859fb8708df145b823bf68defeb771c463c8297
+```
+
 ### Different amounts for different recipient addresses
 
 Data is specified in the file `airdropDataTwoCols.csv` which is two-column CSV with the first column is for address while the second column is for amount. Delimiter is `comma`.
 
-Create the CSV file `airdropData.csv` which holds the addresses to receive airdrop. Each address is per line.
+Example:
+
+```
+0x1b161bf35ad91f323b5e05bd2f871635f3f6094d95aa7693ec033411bb7ce937,0.004
+0xe487a2538dc5ff473f948e455859fb8708df145b823bf68defeb771c463c8297,0.005
+```
 
 ## Run airdrop
 
 `npm start`
+
+## Run in background with pm2
+
+```
+pm2 start runAirdrop.sh --no-autorestart --log-date-format='YYYY-MM-DD HH:mm:ss'
+```

@@ -1,3 +1,5 @@
 .env.airdrop
+.env.airdrop.mainnet
+.env.airdrop.testnet
 node_modules
 *.csv
